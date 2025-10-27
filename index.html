@@ -2,21 +2,35 @@
 <html>
 <head>
     <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
-    <title>Sine Wave Art</title>
+    <title>Oscillart Cafe</title>
 </head>
 <body>
-<div id="container">
-    <canvas id="canvas">
 
-    </canvas>
-</div>
+<div id="container">
+<h1>oscillart cafe</h1>
+    <canvas id="canvas"></canvas>
+
+    
 <input type="text" id="input">
 <button id="submit" onclick="handle()">Play</button>
 <input type="color" id="color1" value="ff0000">
 <input type ="color" id="color2" value ="ff0000">
 <input type="range" min="1" max="100" value="100" id="vol-slider"> 
+<button id="record" onclick="toggle()">Start Recording</button>
+<label>Line Thickness</label>
+<input type="range" id="thickness-slider" min="1" max="10" value="2"> 
+
+<button id="piano-mode" onclick="togglePianoMode()">Piano Mode: OFF</button>
+
 <script src="main.js"></script>
+
+
+</div>
+
 </body>
 
 </html>

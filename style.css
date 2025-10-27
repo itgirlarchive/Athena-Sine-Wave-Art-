@@ -4,3 +4,30 @@
     width: 900px;
     margin-bottom: 2em; 
 }
+
+#container {
+    display: flex;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+h1 {
+    color:rgb(255, 156, 202);
+    font-family: "Pixelify Sans", sans-serif; 
+}
+
+button {
+    color: yellowgreen;
+}
+
+input {
+    color: lightpink; 
+}
+
+label {
+    font-family: "Pixelify Sans", sans-serif; 
+}
