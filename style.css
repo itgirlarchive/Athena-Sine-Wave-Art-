@@ -39,15 +39,105 @@
     text-align: center;
     cursor: pointer;
     transition:color 0.3s; 
+    position: relative; 
 }
 
+.nav-item::after {
+    content: "click me to watch music video"; 
+    position: absolute; 
+    bottom: -30px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: rgba(78,102,73,0.9); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 12px;
+    white-space: nowrap; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+    z-index: 1001;
+}
+
+.nav-item:hover::after{
+    opacity: 1; 
+}
 
 .nav-item p {
     font-size: 14px;
     margin: 0; 
 }
 
+#submit, #record, #piano-mode {
+    position: relative; 
+}
 
+#submit::after{
+    content: "Enter a set of music notes here"; 
+    position: absolute; 
+    bottom: -35px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(78,102,73,0.9); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    white-space: nowrap; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+    z-index: 1001; 
+}
+
+#submit:hover::after{
+    opacity: 1;
+}
+
+#record::after {
+    content: "Record your lucky tunes"; 
+    position: absolute; 
+    bottom: -35px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(78,102,73,0.9);
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 12px; 
+    white-space: nowrap; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+    z-index: 1001; 
+}
+
+#record:hover::after {
+    opacity: 1; 
+}
+
+#piano-mode::after {
+    content: "Make your beats classical"; 
+    position: absolute; 
+    bottom: -35px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(78,102,73,0.9); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 12px;
+    white-space: nowrap; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+    z-index: 1001; 
+}
+
+#piano-mode:hover::after {
+    opacity: 1; 
+}
 
 #container {
     display: flex;
@@ -97,7 +187,7 @@ button{
     color: rgb(55, 90, 55); 
 }
 body {
-    margin-bottom: 5em; 
+    
     background: linear-gradient(135deg, #ffe5f8, #cdeed1, #fffcbf); 
     background-size: 400% 400%; 
     animation: gradientShift 15s ease infinite; 

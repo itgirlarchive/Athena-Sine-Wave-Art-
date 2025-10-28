@@ -291,3 +291,26 @@ function toggle(){
         recorder.stop(); 
     }
 }
+
+const songLinks = {
+    'happy-birthday': 'https://www.youtube.com/watch?v=ayGzVtcAK9Q', 
+    'jingle-bells': 'https://www.youtube.com/watch?v=o6wRHQu9BgM', 
+    'you-are-my-sunshine': 'https://www.youtube.com/watch?v=FeKRtRvo7Qc', 
+    'twinkle-star': 'https://www.youtube.com/watch?v=CtF4n6CMSko'
+}; 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-item'); 
+    navItems[0].addEventListener('click', () => {
+        window.open(songLinks['happy-birthday'], '_blank'); 
+    }); 
+    navItems[1].addEventListener('click', () => {
+        window.open(songLinks['jingle-bells'], '_blank'); 
+    }); 
+    navItems[2].addEventListener('click', () => {
+        window.open(songLinks['you-are-my-sunshine'], '_blank'); 
+    }); 
+    navItems[3].addEventListener('click', () => {
+        window.open(songLinks['twinkle-star'], '_blank'); 
+    }); 
+}); 
