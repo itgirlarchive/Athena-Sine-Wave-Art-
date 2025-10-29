@@ -1,6 +1,6 @@
 # Athena-Sine-Wave-Art-
-1. Welcome! My project is called Oscillart Lucky Library. 
-2. It took me 10 hours to fully finalize this project! 
-3. I used HTML, CSS, and Javascript.
-4. Oscillart Lucky Library is a fun web app designed to motivate users with their studies through some "lucky tunes"! They are created by sine waves and users can input in a series of music letters to make any songs of their choice, with a few sample options available at the top.
-5. I'm really proud of the extra customization and piano mode feature! It makes the notes sound less "electric" if you will :) 
+Welcome! 
+1. My project is called Oscillart Lucky Library. It is based off the Oscillart Jam from Hack Club. What it does is it uses the frequencies of sine waves to produce music notes and users can input such notes to make various tunes while seeing how the sine waves look like!
+2. I made this project because I wanted to provide a web app that would provide some motivation for users to continue with their studies, work, etc. The theme is that the tunes users make are lucky and will give them the joy they need! I also wanted to improve my technical skills, especially as this project emphasized a variety of programming languages.
+3. I made my project using HTML, CSS, and Javascript. This is common for most web applications as HTML provides the overall basis of the website while CSS customizes and Javascript adds more moving functionality. 
+4. I definitely struggled a bit with making the sine waves move and function as needed. It was honestly quite complicated to understand the mathematical relationships going on and making sure that different customizing features like the volume control or recording worked as intended. Also adding new features like the piano mode definitely took a lot of time and making the overall design look nice. But I learned so much, like my confidence with Javascript. 
