@@ -148,6 +148,7 @@
     flex-direction: column;
     gap: 10px; 
     overflow: visible; 
+    padding-bottom: 1000px; 
 }
 
 #controls-wrapper{
@@ -181,6 +182,7 @@ label {
     font-family: "Pixelify Sans", sans-serif; 
 }
 
+
 button{
     margin-bottom: 1em;
     font-family: "Pixelify Sans", sans-serif;
@@ -192,7 +194,8 @@ body {
     background-size: 400% 400%; 
     animation: gradientShift 15s ease infinite; 
     min-height: 100vh; 
-
+    margin-bottom: 5em; 
+    padding-bottom: 100px; 
 }
 
 @keyframes gradientShift {
@@ -208,3 +211,22 @@ body {
         background-position: 0% 50%; 
     }
 }
+
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(236,243,219,0.9); 
+    padding: 15px 0; 
+    text-align: center;
+    border-top: 3px solid rgb(78, 102, 73); 
+    z-index: 999; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px; 
+    color: rgb(74, 97, 62); 
+}
+

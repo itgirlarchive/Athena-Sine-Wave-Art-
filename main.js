@@ -292,25 +292,56 @@ function toggle(){
     }
 }
 
+/*
 const songLinks = {
     'happy-birthday': 'https://www.youtube.com/watch?v=ayGzVtcAK9Q', 
     'jingle-bells': 'https://www.youtube.com/watch?v=o6wRHQu9BgM', 
     'you-are-my-sunshine': 'https://www.youtube.com/watch?v=FeKRtRvo7Qc', 
     'twinkle-star': 'https://www.youtube.com/watch?v=CtF4n6CMSko'
 }; 
+*/
+
+const songs = {
+    'happy-birthday': {
+        link: 'https://www.youtube.com/watch?v=ayGzVtcAK9Q',
+        melody: 'DDEDGG DDEDAG'
+    }, 
+    'jingle-bells': {
+        link: 'https://www.youtube.com/watch?v=o6wRHQu9BgM', 
+        melody: 'EEE EEE EGCDE'
+    }, 
+    'you-are-my-sunshine': {
+        link: 'https://www.youtube.com/watch?v=FeKRtRvo7Qc', 
+        melody: 'DGABB EDCB'
+    }, 
+    'twinkle-star': {
+        link: 'https://www.youtube.com/watch?v=CtF4n6CMSko', 
+        melody: 'GGDDEED CCBBAAG'
+    }
+}; 
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item'); 
+    const inputBox = document.getElementById('input'); 
+
     navItems[0].addEventListener('click', () => {
-        window.open(songLinks['happy-birthday'], '_blank'); 
+        inputBox.value = songs['happy-birthday'].melody; 
+        window.open(songs['happy-birthday'].link, '_blank'); 
     }); 
     navItems[1].addEventListener('click', () => {
-        window.open(songLinks['jingle-bells'], '_blank'); 
+        inputBox.value = songs['jingle-bells'].melody; 
+        window.open(songs['jingle-bells'].link, '_blank'); 
     }); 
     navItems[2].addEventListener('click', () => {
-        window.open(songLinks['you-are-my-sunshine'], '_blank'); 
+        inputBox.value = songs['you-are-my-sunshine'].melody; 
+        window.open(songs['you-are-my-sunshine'].link, '_blank'); 
     }); 
     navItems[3].addEventListener('click', () => {
-        window.open(songLinks['twinkle-star'], '_blank'); 
+        inputBox.value = songs['twinkle-star'].melody; 
+        window.open(songs['twinkle-star'].link, '_blank'); 
     }); 
 }); 
+
+
+
